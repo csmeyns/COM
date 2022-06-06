@@ -1,0 +1,243 @@
+:root {
+	box-sizing: border-box;
+	font-size:  calc(1.5vh + 1em);
+}
+
+.container { 
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	justify-content: space-around;
+}
+
+.logo-nav {
+	display: flex;
+}
+
+.site-title {
+	width: 33%;
+/*	display: block;
+*/}
+
+.site-nav {
+	width: 67%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+/*	flex-flow: row wrap;
+	flex: 1 1 40%;
+*/}
+
+[class^='nav-']{
+	margin: 0.3em 0 0 1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 1rem;
+	font-size: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-about {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.nav-podcast {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.nav-books {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.nav-projects {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.nav-blog {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+/*.logo-nav {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 250px 100px 100px;
+	grid-template-rows: 100px 100px;
+}
+*/
+/*.site-title {
+	grid-column: 1;
+	grid-row: 1/2;
+}
+
+.site-nav {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	outline: 3px dashed;
+}*/
+
+/*.site-nav {
+	display: flex;
+	align-items: center;
+	padding: 0 2rem;
+	padding-left: 0;
+}
+*/
+/*.nav-item {
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 1rem;
+	font-weight: bold;
+	font-size: 1rem;
+}*/
+
+main {
+	margin: auto;
+}
+
+footer { 
+	display: flex;
+/*	text-align: left;*/
+	width: 100%;
+	justify-content: center;
+}
+
+.footer-item {
+	text-decoration: none;
+	margin-right: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  text-align: left; 
+  text-decoration: none;
+  justify-content: space-evenly; 
+}
+
+body {
+	font-family: 'Crimson Pro';
+/*	background-color: #FFF1E0;*/
+}
+
+a {
+	text-decoration: none;
+	text-decoration-color: #000000;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*@media (min-width: 800px) {
+	:root {
+		font-size: calc(1vh + 1.5em);
+	}
+
+	.container {
+		flex-flow: row wrap;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.FlexWrapper {
+		justify-content: center;
+	}
+
+
+	.FlexHeaderNav {
+		width: 150px;
+		flex: 0 0 auto;
+		order: 1;
+	}
+
+	.site-nav {
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: auto;
+}
+	
+	.nav-item {
+	margin-right: auto;
+}
+
+	.FlexMainFoot {
+		width: 80%;
+		max-width: 1200px;
+		order: 2;
+		padding-left: 1em;
+	}*/
+
+/* Fonts */
+
+/* crimson-pro-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/crimson-pro-v21-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/crimson-pro-v21-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* crimson-pro-700 - latin-ext_latin */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/crimson-pro-v21-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/crimson-pro-v21-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* crimson-pro-italic - latin-ext_latin */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/crimson-pro-v21-latin-ext_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/crimson-pro-v21-latin-ext_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* crimson-pro-700italic - latin-ext_latin */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/crimson-pro-v21-latin-ext_latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/crimson-pro-v21-latin-ext_latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ubuntu-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/ubuntu-v20-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ubuntu-v20-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ubuntu-italic - latin-ext_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/ubuntu-v20-latin-ext_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ubuntu-v20-latin-ext_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ubuntu-700 - latin-ext_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/ubuntu-v20-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ubuntu-v20-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

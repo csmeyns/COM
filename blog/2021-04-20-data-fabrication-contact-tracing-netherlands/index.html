@@ -1,0 +1,190 @@
+<!doctype html><html lang=en><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=author content="Chris Onrust Meyns">
+<meta name=description content="Personal website of Chris Onrust Meyns">
+<title>Data fabrication in contact tracing data in the Netherlands | C.O.M.</title>
+<meta property="og:title" content="Data fabrication in contact tracing data in the Netherlands">
+<meta property="og:description" content="There have been credible reports of data fabrication in contact tracing data in The Netherlands. These have potentially serious implications for public health data, policy, research and society. Data owners (RIVM, GGDs) and (re)users must investigate, notify, and where applicable, retract.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/blog/2021-04-20-data-fabrication-contact-tracing-netherlands/"><meta property="og:image" content="http://localhost:1313/com.jpg"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2021-04-20T20:35:18+01:00">
+<meta property="article:modified_time" content="2021-04-20T20:35:18+01:00">
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/syntax.css>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-67501284-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+</head><body>
+<div class=container>
+<div class=logo-nav><header class=site-title>
+<a class=logo href=/>
+<img src=http://localhost:1313//images/com.svg alt="Chris Onrust Meyns site logo (capital letters C.O.M. in Fraktur script)"></a>
+</header>
+<nav class="site-nav FlexItem FlexNav grid-item">
+<a href=/#about class=nav-item>about</a>
+<a href=/#podcast class=nav-item>podcast</a>
+<a href=/#books class=nav-item>books</a>
+<a href=/#projects class=nav-item>projects</a>
+<a href=/#blog class=nav-item>blog</a>
+</nav>
+</div>
+<main>
+<article class=post>
+<header>
+<h1>Data fabrication in contact tracing data in the Netherlands</h1>
+<summary>There have been credible reports of data fabrication in contact tracing data in The Netherlands. These have potentially serious implications for public health data, policy, research and society. Data owners (RIVM, GGDs) and (re)users must investigate, notify, and where applicable, retract.</summary>
+<section class=metadata>
+<p>
+<span class=tags><a class=tag href=/tags/data-fabrication>data fabrication</a> · <a class=tag href=/tags/contact-tracing>contact tracing</a> · <a class=tag href=/tags/pandemic>pandemic</a> · <a class=tag href=/tags/data-ethics>data ethics</a></span><br>
+2021-04-20<br>
+appeared:
+<a href=https://medium.com/@chrismeyns/reports-of-data-fabrication-in-contact-tracing-data-in-the-netherlands-545e2e20ab0>Medium</a>
+</p>
+</section>
+<aside class=toc>
+<h2 class=toc-header>contents</h2>
+<nav id=TableOfContents>
+<ol>
+<li><a href=#reports-of-irregularities-in-contact-tracing-data>Reports of irregularities in contact tracing data</a></li>
+<li><a href=#irregularities-not-denied-by-public-health-services>Irregularities not denied by public health services</a></li>
+<li><a href=#specifics-fabrication-of-infection-setting-data-in-particular-for-the-category-home>Specifics: Fabrication of infection setting data, in particular for the category ‘Home’</a></li>
+<li><a href=#practices-would-amount-to-data-fabrication>Practices would amount to data fabrication</a></li>
+<li><a href=#home-setting-in-epidemiological-reporting>‘Home’ setting in epidemiological reporting</a></li>
+<li><a href=#home-setting-in-crisis-communication>‘Home’ setting in crisis communication</a></li>
+<li><a href=#fabricated-data-reuse-and-fieldlab-events>Fabricated data reuse and Fieldlab events</a></li>
+<li><a href=#forward>Forward</a></li>
+</ol>
+</nav>
+</aside>
+</header>
+<section class=body>
+<h2 id=reports-of-irregularities-in-contact-tracing-data>Reports of irregularities in contact tracing data</h2>
+<p>In a recent <a href=https://www.ad.nl/binnenland/alarm-over-slagkracht-ggd-weggehoond-bewindsman-zei-infectieziekten-zijn-toch-voorbij~a594f3b2b/>explosive article</a> published in national newspaper <em>AD</em> (<em>Algemeen Dagblad</em>), investigative journalist Marcia Nieuwenhuis, in collaboration with colleagues Adrianne de Koning, Marjolein Groenendijk and Eric Reijnen-Rutten, reported systemic problems within COVID-19 infection contact tracing, which in The Netherlands is carried out by the municipal Public Health Services (GGDs) (in Dutch: ‘Alarm over slagkracht GGD weggehoond: ‘Bewindsman zei: ‘Infectieziekten zijn toch voorbij’’’, <em>AD</em>, 17 April 2021).</p>
+<p>The article raises concerns about staffing shortages and lack of funding due to years of budget cuts. It brings to light how early warnings about under-preparedness for an outbreak of an infectious disease were brushed aside.</p>
+<p>However, one salient point has not been picked up in the flood of online responses to the piece so far. Namely, that a number of interviewees actually blew the whistle on what appear to be systematic practices of encouraging contact tracers to mis-record (or, in other words, <em>tamper with</em>) contact tracing data. Specifically, staff employed as contact tracers said that they had been told to record that people had been infected at home, merely in order to be able to close a case quickly and move onto the next one. This happened even when there was no indication whatsoever that the person in question had in fact been infected at home.</p>
+<p>These reports of irregularities in data entry are credible. Nieuwenhuis is an experienced investigative journalist, who specialises in open (government) data and information. This investigation is said to have been carried out over a solid period of many months (since June 2020). Around a hundred different sources were consulted, from current and former GGD directors, to people currently working in contact tracing operations. Hence, there is good reason to take the reports extremely seriously.</p>
+<h2 id=irregularities-not-denied-by-public-health-services>Irregularities not denied by public health services</h2>
+<p>Soon after the article appeared, the body that represents the municipal public health services responsible for the contact tracing operations, GGD GHOR Nederland, <a href=https://ggdghor.nl/actueel-bericht/reactie-ad-artikel-onvolledig-beeld-zonder-context-van-de-situatie/>issued a statement responding to Nieuwenhuis’ article</a>. Significantly, this statement does <em>not deny</em> the reports of irregularities in contact tracing data registration.</p>
+<p>In its statement, GGD GHOR Nederland writes that “we emphatically do not recognise ourselves” in the overall picture detailed in the article. The statement does pick up (if evasively) on some of the allegations of racist discrimination in contact tracing practices. GGD GHOR Nederland director André Rouvoet said that their organisation is “working on the public health of <strong>all</strong> inhabitants of the Netherlands” (boldface in the original). Yet it chooses to gloss over, and at no point responds to, the specific allegation that contact tracing data were tampered with. Disconcertingly, the representative body simply notes:</p>
+<blockquote>
+<p>“Unfortunately, incidents can occur, but overall we see a different picture. For instance, many other stories can be told, which would result in a much more nuanced picture.”</p>
+</blockquote>
+<p>I doubt that I am alone in thinking that, on a subject as serious as tampering with public health data, adding “nuance” by telling “other stories” could not possibly be enough. It needs to be absolutely, categorically ruled out that structural tampering with contact tracing data has taken (and potentially is still taking) place.</p>
+<h2 id=specifics-fabrication-of-infection-setting-data-in-particular-for-the-category-home>Specifics: Fabrication of infection setting data, in particular for the category ‘Home’</h2>
+<p>Let’s consider more closely what Nieuwenhuis reports has happened. Among the many concerns that the article raises about contact tracing data specifically (documents sent off as complete but with “lots of errors”, people testing positive who never got called for contact tracing at all) what concerns me most are allegations of what is best described as a form of data fabrication.</p>
+<p>In the <em>AD</em> article, people active in contact tracing report that they were pressured to make up information on the specific setting in which someone who tested positive may have contracted the virus. Specifically, Nieuwenhuis reports multiple instances of contact tracers confiding that they were pushed to record that a person’s infection had most likely occurred in the setting labelled ‘Home’ (‘<em>Thuissituatie</em>’).</p>
+<p>A group of three people (two adults, one child) in a domestic setting. One adult lounges on a couch with the child on their lap, the other sits on the floor with a laptop and cup of coffee, glancing at the other pair. All three smile.</p>
+<p>In one such report, contact tracers say that superiors instructed them to register infections as having occurred ‘at home’ in specific cases. Namely, in cases where additional effort or resources might otherwise have been required to carry out the contact tracing process effectively:</p>
+<blockquote>
+<p>“Due to staffing shortages, contact tracers had to ‘do away with’ difficult cases. ‘Weddings with people from an ethnic minority background were ignored, because of language difficulties’, several temporary contact tracers, who had to help contain outbreaks, confirm. They were told: just fill out ‘home’ as the most likely location of infection, so that they could move on to the next case.”</p>
+</blockquote>
+<p>(One can see why this report sparked the aforementioned outrage and charges of racist discriminatory practices within Dutch contact tracing. One can also see that simply sweeping such charges under the carpet, by saying that one supports the health of “<strong>all</strong> people”, as GGD GHOR Nederland tried in its statement of 17 April 2021, without conducting a proper investigation and without indicating what actions will be taken, can be nowhere near enough.)</p>
+<p>Further reports, though, indicate that data fabrication occurred not just in cases that required additional effort or resources to trace contacts properly. Instead, it appears that such tampering with data was encouraged as a matter of course, simply to speed things up. As Nieuwenhuis describes it, quoting two precariously employed sources (Brenda and Paul) who were both directly involved in contact tracing:</p>
+<blockquote>
+<p>“It bothered contact tracers most that they were encouraged to record that patients had contracted the virus ‘at home’. Paul: ‘They said: just put down ‘Home’ as the most likely location of contracting the virus. Even though it might just as well have happened in the workplace. With ‘Home’ you could easily determine that partner and child didn’t have any issues. And onward to the next file.’ Brenda adds: ‘When I hear the PM say at press conferences that most infections happen at home, then I think: yeah right … Those data are not reliable at all.’”</p>
+</blockquote>
+<p>Let that sink in: Contact tracers report being told to input information into the contact tracing system of which they had no indication that it was correct, and which they themselves indicate might very well be false.</p>
+<p>If true, the implications of this are serious. It means not just that there is good indication that the category ‘Home’ in the public health data drawn from contact tracing contains spurious entries. Not just that it has been artificially inflated, and so cannot be taken to reflect the true situation of infection locations in the country. (That in itself would already be bad enough, from a public health monitoring point of view.)</p>
+<p>From a data use and reuse point of view, the consequences of data fabrication are way more serious. For suppose that indeed data for the number of infections occurring in the setting ‘Home’ has been fabricated in the way described. This would mean that, for any case of infection in the GGD contact tracing data classified as having occurred at home, there is no telling whether that infection did in fact occur at home (or whether that person got infected in some other setting). We would have to assume that an unknown proportion of entries in the category ‘Home’ is spurious. That, in turn, means that the whole classification of ‘Home’ must be regarded as fundamentally unreliable&mdash;and so, useless. The label ‘Home’ can no longer be used as a trustworthy indicator of the setting in which someone likely got infected. Hence, the infection setting category ‘Home’ must be entirely ignored or discarded in the GGD contact tracing data set. It is just more ‘Setting unknown’.</p>
+<p>By implication, that also means that from contract tracing data as gathered by the GGDs, and as published in weekly summary form by the National Institute for Public Health and the Environment (RIVM) (which itself is part of the Ministry of Health, Welfare and Sport, and is the body involved in infectious disease control in the country), <em>no positive conclusions</em> can be drawn about the proportion of infections that did take place at home. If the reports of data fabrication are correct, then the RIVM has been publishing public health information based in part on fabricated data.</p>
+<h2 id=practices-would-amount-to-data-fabrication>Practices would amount to data fabrication</h2>
+<p>I have been using the term ‘data fabrication’ to describe practices of tampering with data that the contact tracing whistleblowers report on, as described in Nieuwenhuis’ <em>AD</em> article. Let me back up why I think this label is appropriate here.</p>
+<p>The <a href=https://allea.org/code-of-conduct/>European Code of Conduct for Research Integrity</a>, produced by European Federation of Academies of Sciences and Humanities (ALLEA), and of which the Royal Netherlands Academy of Arts and Sciences (KNAW) is a member, defines ‘fabrication’ as (p. 8):</p>
+<blockquote>
+<p>“Fabrication is <em>making up results and recording them as if they were real</em>.”</p>
+</blockquote>
+<p>Together with <em>falsification</em> (“manipulating research materials, equipment or processes or changing, omitting or suppressing data or results without justification”) and <em>plagiarism</em> (“using other people’s work and ideas without giving proper credit to the original source”), the European Code of Conduct for Research Integrity calls fabrication of records a “particularly serious” form of research misconduct, because it distort research records.</p>
+<p>Contact tracers active in the GGD contact tracing operations report that they were told to input ‘Home’ as the most likely location of contracting the virus, even if they had no indication that someone actually got infected at home, and even when the infection might just as well have happened elsewhere.</p>
+<p>Registering that someone contracted the virus in the setting ‘Home’, even when it was equally likely that this person contracted the virus <em>not</em> in the setting ‘Home’ (but in some other setting), fits the definition of data fabrication given here.</p>
+<p>If the allegations described in Nieuwenhuis’ investigation are correct, then contact tracers at the GGD were pushed to fabricate official government public health data. That, in my view, is extremely serious. Surely it merits a response way more substantial than: “Unfortunately, incidents can occur, but overall we see a different picture.”</p>
+<h2 id=home-setting-in-epidemiological-reporting>‘Home’ setting in epidemiological reporting</h2>
+<p>Fabricating data is a serious form of professional misconduct within a public health body. However, the impact of fabrication multiplies when a data set containing fabricated data is used and reused to draw further conclusions&mdash;be they in the form of policy or behavioural recommendations, or further research studies. In that case, fabrication can have drastic consequences.</p>
+<p>And that is exactly how the GGD contact tracing data in fact went on to be used.</p>
+<p>Since July 2020, the RIVM used GGD contact tracing data in its <a href=https://www.rivm.nl/coronavirus-covid-19/actueel/wekelijkse-update-epidemiologische-situatie-covid-19-in-nederland>weekly summary reports on the state of the COVID-19 epidemic in The Netherlands</a>. These reports always contain, under some heading or other, a section with a breakdown of settings in which people who had tested positive had likely been infected.</p>
+<p>In this breakdown of likely infection settings, consistently for a huge portion of confirmed cases no such setting is known or reported. In the RIVM report of 7 July 2020 (covering the period since 4 May 2020), no likely infection setting was recorded for 44% of all people who had tested positive. For the most recent report of 20 April 2021 (covering the period since 1 February 2021), this still was the case for a cumulative 36% of cases.</p>
+<p>Yet, within a more detailed breakdown of cases where a likely setting of infection was recorded, the category of ‘Home’ was consistently comparatively large. Larger, in any case, than the settings ‘Funeral’ or ‘Hotels, restaurants, cafés’ (‘Horeca’). For example, in the RIVM report ‘Epidemiologische situatie COVID-19 in Nederland’ published on 7 July 2020, ‘Home’ is mentioned as a likely setting of contracting the virus for 2,264 out of 9,803 cases (or 23,1%) of infection reported to the GGDs (p. 14). In the report published two weeks later (21 July 2020, also covering the period since 4 May 2020), that held for 2,655 of 11,290 cases (or 23,5%) (p. 15). While the report published on 4 August 2020 listed ‘Home’ as the potential infection location for 3,451 out of 15,184 cases (or 22,7%) (p. 16).</p>
+<p>(Of course, one explanation for this comparative prominence of the category ‘Home’ might be that people may be more likely to recall, when quizzed, that a partner or housemate is also ill with COVID-19, while they might not know this for a fleeting contact in a bar.)</p>
+<h2 id=home-setting-in-crisis-communication>‘Home’ setting in crisis communication</h2>
+<p>Because of its relative prominence in the breakdown of likely infection settings in the GGD contact tracing data, the category ‘Home’ became salient to such an extent that many&mdash;including MPs, policy makers, and government advisers&mdash;soon began to repeat the phrase that “most infections happens at home”. (Which, it should be repeated, would not have been supported by the GGD contact tracing data even if no data fabrication took place. By no measure does circa 23% constitute “most cases”. At best, one could say that of those cases for which a likely setting of infection was recorded, the setting ‘Home’ was listed most frequently.)</p>
+<p>Consider just some of the diagnoses that started to appear in regional and national news outlets from July 2020 onward, after the RIVM had started to regularly publish its summary analysis of GGD contact tracing data:</p>
+<blockquote>
+<p>“When you get tested for coronavirus and turn out to be infected, the GGD carries out contact tracing in your area. (…) Most patients were most likely infected by a family member or house mate.” (<a href=https://www.rtlnieuws.nl/nieuws/nederland/artikel/5169946/corona-besmettingen-locatie-setting-thuis-ov-risico-plek-rivm><em>RTL Nieuws</em>, 7 July 2020</a>)</p>
+</blockquote>
+<blockquote>
+<p>“GGDs say that more than half of infections happen at home.” (<a href=https://www.dvhn.nl/extra/Waar-worden-de-meeste-mensen-besmet-met-corona-Hier-raken-de-meeste-mensen-besmet-en-dat-is-niet-per-se-in-de-horeca-26047346.html><em>Dagblad van het Noorden</em>, 24 September 2020</a>)</p>
+</blockquote>
+<blockquote>
+<p>“Infections at home, with family and in the workplace remain at number one” in a ranking of places where people most likely got infected (<a href=https://www.omroepbrabant.nl/nieuws/3275023/waar-raken-we-besmet-met-corona-vooral-thuis-bij-familie-en-op-het-werk><em>Omroep Brabant</em>, 12 October 2020</a>)</p>
+</blockquote>
+<blockquote>
+<p>“Most people get infected at home, in the workplace or at school, analysis of RIVM and GGD contact tracing data from the last six weeks shows,” (<a href=https://www.ad.nl/nijmegen/dit-zijn-de-plekken-waar-de-meeste-mensen-met-corona-besmet-raken~aebe2273/><em>AD</em>, 29 November 2020</a>)</p>
+</blockquote>
+<blockquote>
+<p>“Half of people who tested positive for corona virus last week had no idea where they contracted the virus.” But: “In those cases where a likely source of infection is known, where did this happen? Primarily at home. Of those people who report a source of infection, more than half mentions the home.” (<a href=https://www.nu.nl/uitleg-over-het-coronavirus/6096858/waar-liepen-mensen-coronabesmettingen-op-visite-lijkt-belangrijke-bron.html><em>NU.nl</em>, 16 December 2020</a>)</p>
+</blockquote>
+<blockquote>
+<p>And a regional newspaper reports that RIVM data show that, “Most infections in the region occur at home.” (<a href=https://www.nhnieuws.nl/nieuws/281416/aantal-besmettingen-stijgt-meeste-vinden-plaats-in-thuissituatie-gevolgd-door-werk><em>NH Nieuws</em>, 23 February 2021</a>)</p>
+</blockquote>
+<p>The refrain was repeated not just in news reports. Ministers, civil servants and scientists advising the government have equally repeated variations on the same point. Professor Marion Koopmans, a virologist at the Erasmus University Medical Centre who is regularly consulted as an expert by the Dutch Government’s Outbreak Management Team (OMT) (a body convened by the RIVM to advise the Ministry of Health, Welfare and Sport on cross-regional or international outbreaks of infectious diseases), notes:</p>
+<blockquote>
+<p>“Most infections happen at home, through family, or in the workplace.” (<a href=https://www.parool.nl/nederland/viroloog-marion-koopmans-blijkbaar-ontbreekt-het-urgente-gevoel~b8455076/><em>Het Parool</em>, 25 July 2020</a>)</p>
+</blockquote>
+<p>And Hubert Bruls, chair of the National Security Council (which coordinates with, among other parties, the fire services, emergencies services and the Ministry of Justice and Security, on security matters in The Netherlands), said:</p>
+<blockquote>
+<p>“Most infections happen at home, but we cannot intervene there. We will investigate whether something can be done about that.” (<a href=https://www.ad.nl/politiek/burgemeesters-mogen-experimenteren-met-eigen-coronabestrijding~a92e84e8/><em>AD</em>, 29 July 2020</a>)</p>
+</blockquote>
+<p>At a <a href=https://www.rijksoverheid.nl/documenten/mediateksten/2020/08/06/letterlijke-tekst-persconferentie-minister-president-rutte-en-minister-de-jonge-6-8-2020>press conference of 6 August 2020</a>, Premier Mark Rutte, referring to “infection statistics”, noted: “It is important to realise that a large proportion of infections occurs at home, for instance at birthdays or dinners with friends.” In early December the Minister of Health, Welfare and Sport, Hugo de Jonge, is reported to have contemplated further restrictions during the December holiday period, because “Most infection happens at home.” (<a href=https://www.parool.nl/nederland/coronamoeheid-het-geduld-in-de-ministersploeg-van-rutte-is-tanende~b91412ee><em>Het Parool</em>, 9 December 2020</a>). And Cees Vermeer, Director of the GGD for South Holland-South, is reported to make the point: “Most infections happen at home, Vermeer thinks. ‘Schools are closed, just like the shops, so in any case it cannot happen there.’” (<a href=https://www.bndestem.nl/dordrecht/extra-bedden-voor-coronapatienten-buiten-ziekenhuizen~a18fbc71/><em>BN DeStem</em>, 7 January 2021</a>)</p>
+<h2 id=fabricated-data-reuse-and-fieldlab-events>Fabricated data reuse and Fieldlab events</h2>
+<p>Further, and worryingly, the GGD contact tracing data set&mdash;which should be suspected to contain fabricated data&mdash;has found its way into scientific research, too. As an example, I will here consider the scientific report &lsquo;Results Risk Analysis&rsquo; (‘<a href=https://fieldlabevenementen.nl/wp-content/uploads/2021/04/Bijlage-5-Risicomodel-TU-Delft.pdf>Resultaten Risico Analyse</a>’, dated 17 March 2021), produced for the organisation Fieldlab Evenementen by Dr Bas Kolen, research assistant Laurens Znidarsic, and Professor Pieter van Gelder, all of the Faculty of Technology, Policy and Management at the Technical University, Delft (TUDelft). (The report itself is on institutional letterhead, bearing the blazing TUDelft logo on each individual page as the mark of a university-sanctioned document.)</p>
+<p><figure>
+<img src=/images/data-fabrication-contact-tracing.jpg alt="Part of the first page of the report ‘Results Risk Analysis’">
+<figcaption>Part of the first page of the report ‘Resultaten Risico Analyse’ by Bas Kolen, Laurens Znidarsic and Pieter van Gelder of TUDelft, produced for Fieldlab Evenementen</figcaption>
+</figure></p>
+<p>The report ‘Resultaten Risico Analyse’ seeks to model the risk of getting infected with COVID-19 across several scenarios. It specifically seeks to compare the risk of getting infected when attending events (such as a conference or theatre performance) with the risk of getting infected when staying at home. (As they put it: “The results [of modelling various events] have been compared with the risks an individual would run if they had stayed at home or if they would have received a visitor.”, p. 1, my translation from the Dutch).</p>
+<p>However, the modelling of this comparative risk depends crucially on the GGD contact tracing data (as published by the RIVM) as a the data source for identifying the risk of an individual getting infected when staying at home, or when receiving a visitor at home. (“The risk model (…) has contact tracing settings as its starting point. Use has been made of: Weekly RIVM reports that describe how many infections<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>, hospital admissions and deaths there are. Supplementary data from the contact tracing research and the GGD Amsterdam.” (p. 3, cf. p. 10).</p>
+<p>The domino effect of what must now strongly be suspected to be fabrication in the GGD contact tracing data becomes all too clear at this point. If the contact tracing data from the GGD contains fabricated data&mdash;in particular around the category of how many, and what proportion of, infections occurred in the setting ‘Home’&mdash;then those data cannot be relied upon to draw any conclusions about settings of infection. But in that case, without that data, the core basis for the comparitive modelling in Kolen, Znidarsic and Van Gelder’s report of 17 March 2021 falls away. And as the comparative modelling was the whole point of this report, this report itself must also be regarded as void.</p>
+<p>Societal impact is part of the downstream implications, too. As noted, Kolen, Znidarsic and Van Gelder had produced their report ‘Resultaten Risico Analyse’ for the organisation Fieldlab Evenementen. On its website, Fieldlab Evenementen <a href=https://fieldlabevenementen.nl/adviesaanvraag-heropening-evenementen-type-i-binnen-passief-met-bijlagen/>describes itself as follows</a>:</p>
+<blockquote>
+<p>“Fieldlab is a joint initiative of the events sector, united in the EventPlatform and the Alliantie van Evenementenbouwers and the Government. The programme is supported by the Ministries of VWS [Health, Welfare and Sport], OCW [Education, Culture and Science], EZK [Economic Affairs and Climate Policy] and JenV [Justice and Security].”</p>
+</blockquote>
+<p>Its main aim, it writes, is “to bring the events branche back to normal.”</p>
+<p>At the point of writing, Fieldlab Evenementen is still planning to hold over ten large-scale events between April and June 2021. Visitor numbers at these events are scheduled to range from around 500 to 10,000 participants each. In their own communication, Fieldlab Evenementen indicates that the assumption that such events can be held safely in a country that is currently in the midst of its third wave of the COVID pandemic (with new infections still easily topping 7,000 a day) is <a href=https://fieldlabevenementen.nl/adviesaanvraag-heropening-evenementen-type-i-binnen-passief-met-bijlagen/>based squarely on the risk modelling provided to them by TUDelft</a>:</p>
+<blockquote>
+<p>“The risk model of TUDelft demonstrates that the risk [of infection] each hour at events of type I [indoor events with a passive audience] during Fieldlabs (with measures and pre-testing) is equal to the risk of societal situations at home or with visitors at home (without test).”</p>
+</blockquote>
+<p>In other words: Fieldlab Evenementen argues that large-scale events can be held safely, because the risk of getting infected at one of their events is “equal” to the risk of getting infected while staying at home. The report ‘Resultaten Risico Analyse’ is meant to provide the scientific backing to this claim. However, Kolen, Znidarsic and Van Gelder’s comparative risk modelling between event settings and ‘Home’ settings depended crucially on the GGD contact tracing data. If alleged data fabrication makes it the case that no conclusions about the proportion of infections occurring at home can be drawn based on GGD contact tracing data, then there can be no comparative risk modelling based on that data. Without the comparative risk modelling as provided in the report ‘Resultaten Risico Analyse’, the whole scientific support for claims that Fieldlab’s events can be held safely, without increasing the spread of infection, drops away.</p>
+<p>I am belabouring the point to draw out the drastic, down-the-line consequences that fabrication of public health data, such as contract tracing data, can have for policy, science, and society.</p>
+<h2 id=forward>Forward</h2>
+<p>When there are serious, credible allegations that data fabrication may have taken place (and that as a result, fabricated data may have been used in decision making and in scientific reports), the point of calling people or organisations out on this is not to blame or accuse: the point is that appropriate action gets taken.</p>
+<p>In general, in cases of suspicions of data fabrication, it is incumbent upon the data owner (in this case the GGDs, where fitting in collaboration with the RIVM) to:</p>
+<ol>
+<li>investigate transparently;</li>
+<li>notify any affected parties; and, where appropriate,</li>
+<li>retract the affected data set(s) in question.</li>
+</ol>
+<p>Anyone using an already published data set that may have been affected by fabrication (in this case, anyone relying on the GGD contact tracing data, in particular to draw inferences about the proportion of infections that occurs in the setting ‘Home’) would equally do well to investigate the extent to which their conclusions could be affected. If the data does turn out to be unusable due to fabrication, and if this means that any previously drawn conclusions can no longer be upheld, then likewise a notice and (where applicable) retraction would be the only proper way forward.</p>
+<p>Either way, data fabrication and its (potentially large-scale) consequences are not going away simply by ignoring them. With potential consequences for public health as serious as the ones describes here, a meagre “Unfortunately, indicents can occur” simply will not do.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>The Dutch in the report here is ‘<em>bestemmingen</em>’, meaning ‘destinations’. However, from the context of the report and the nature of the RIVM data, it can be inferred with reasonable confidence that this must have been a typo, and that ‘<em>besmettingen</em>’ or ‘infections’, was meant.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</section>
+<div class=top>
+<a href=#top>⌃ Back to top</a>
+</div>
+</article>
+<hr>
+<nav class=footer-nav>
+<a href=http://localhost:1313/blog/2020-10-16-philosophy-as-work/ class=previous-post>« Philosophy as Work</a>
+<a href=http://localhost:1313/blog/2021-06-01-interview-breaking-waves/ class=next-post>Interview with Breaking the... »</a>
+</nav>
+</main><footer class="FlexItem FlexFooter">
+<p><a href=mailto:meyns@proton.me class=footer-item>email</a>
+<p><a href=http://eepurl.com/gjVVnT class=footer-item>newsletter</a></p>
+</footer></div>
+</body>
+</html>
