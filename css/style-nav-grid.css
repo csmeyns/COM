@@ -22,14 +22,14 @@
 /*	display: block;
 */}
 
-.site-nav {
+/*.site-nav {
 	width: 67%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 /*	flex-flow: row wrap;
 	flex: 1 1 40%;
-*/}
+*/}*/
 
 [class^='nav-']{
 	margin: 0.3em 0 0 1em;

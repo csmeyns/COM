@@ -14,8 +14,9 @@
 }
 
 .logo-nav {
-	display: flex;
-	flex-direction: column;
+/*	display: flex;
+	flex-direction: column;*/
+	margin: 1rem;
 }
 
 .site-title {
@@ -23,23 +24,23 @@
 	justify-content: center;
 }
 
-.site-nav {
+/*.site-nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	align-content: flex-start;
 	padding: 1rem 2rem 0 0;
-}
+}*/
 
 ::selection{
 	background-color: yellow;
 }
 
 .nav-item {
-/*	text-transform: uppercase;*/
 	text-decoration: none;
-	margin: 0 0 0 1rem;
+	margin: 0 0 0 0.5rem;
 	font-size: 1.2em;
-	justify-content: space-evenly;
+/*	justify-content: space-evenly;*/
 	font-family: 'Ubuntu';
 }
 
@@ -92,12 +93,11 @@ summary {
 }
 
 .blog-list-item {
-	text-indent: -30%;
+	text-indent: -10%;
 }
 
 .blog-list-item {
-	margin-left: 23%;
-
+	margin-left: 10%;
 }
 
 .metadata {
