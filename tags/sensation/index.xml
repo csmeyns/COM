@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sensation on C.O.M.</title><link>https://www.chrismeyns.xyz/tags/sensation/</link><description>Recent content in sensation on C.O.M.</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrismeyns.xyz/tags/sensation/index.xml" rel="self" type="application/rss+xml"/><item><title>Amo and Molyneux’s Question</title><link>https://www.chrismeyns.xyz/blog/2020-01-01-amo-molyneux/</link><pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate><guid>https://www.chrismeyns.xyz/blog/2020-01-01-amo-molyneux/</guid><description>An article that discusses what the philosopher Anton Amo (ca. 1703–ca. 1750) plausibly might have said, had they considered questions about cross-modal learning</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sensation on C.O.M.</title>
+    <link>https://www.chrismeyns.xyz/tags/sensation/</link>
+    <description>Recent content in sensation on C.O.M.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.chrismeyns.xyz/tags/sensation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amo and Molyneux’s Question</title>
+      <link>https://www.chrismeyns.xyz/blog/2020-01-01-amo-molyneux/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.chrismeyns.xyz/blog/2020-01-01-amo-molyneux/</guid>
+      <description>An article that discusses what the philosopher Anton Amo (ca. 1703–ca. 1750) plausibly might have said, had they considered questions about cross-modal learning</description>
+    </item>
+    
+  </channel>
+</rss>

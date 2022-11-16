@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>listening on C.O.M.</title><link>https://www.chrismeyns.xyz/tags/listening/</link><description>Recent content in listening on C.O.M.</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 12 Oct 2021 21:39:05 +0100</lastBuildDate><atom:link href="https://www.chrismeyns.xyz/tags/listening/index.xml" rel="self" type="application/rss+xml"/><item><title>Vulnerable By Design</title><link>https://www.chrismeyns.xyz/podcast/</link><pubDate>Tue, 12 Oct 2021 21:39:05 +0100</pubDate><guid>https://www.chrismeyns.xyz/podcast/</guid><description>A podcast about being vulnerable in today&amp;rsquo;s techno-societies.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>listening on C.O.M.</title>
+    <link>https://www.chrismeyns.xyz/tags/listening/</link>
+    <description>Recent content in listening on C.O.M.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Oct 2021 21:39:05 +0100</lastBuildDate><atom:link href="https://www.chrismeyns.xyz/tags/listening/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vulnerable By Design</title>
+      <link>https://www.chrismeyns.xyz/podcast/</link>
+      <pubDate>Tue, 12 Oct 2021 21:39:05 +0100</pubDate>
+      
+      <guid>https://www.chrismeyns.xyz/podcast/</guid>
+      <description>A podcast about being vulnerable in today&amp;rsquo;s techno-societies.</description>
+    </item>
+    
+  </channel>
+</rss>

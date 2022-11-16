@@ -1,2 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wikileaks on C.O.M.</title><link>https://www.chrismeyns.xyz/tags/wikileaks/</link><description>Recent content in wikileaks on C.O.M.</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Jul 2022 14:25:47 +0200</lastBuildDate><atom:link href="https://www.chrismeyns.xyz/tags/wikileaks/index.xml" rel="self" type="application/rss+xml"/><item><title>Extradition Assange a Threat to Journalism (in Dutch)</title><link>https://www.chrismeyns.xyz/blog/extradition-assange-a-threat-to-journalism/</link><pubDate>Wed, 06 Jul 2022 14:25:47 +0200</pubDate><guid>https://www.chrismeyns.xyz/blog/extradition-assange-a-threat-to-journalism/</guid><description>This is an opinion piece written for the Dutch newspaper NRC Handelsblad. It argues that the USA&amp;rsquo;s request to have publisher and journalist Julian Assange extradited for their work at Wikileaks is a threat to journalism worldwide.
-Recent keurde de Britse Minister van Binnenlandse Zaken Priti Patel een verzoek van de Verenigde Staten goed om WikiLeaks-oprichter Julian Assange uit te leveren. De verdediging van Assange zegt bij het Hooggerechtshof in beroep te gaan.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wikileaks on C.O.M.</title>
+    <link>https://www.chrismeyns.xyz/tags/wikileaks/</link>
+    <description>Recent content in wikileaks on C.O.M.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Jul 2022 14:25:47 +0200</lastBuildDate><atom:link href="https://www.chrismeyns.xyz/tags/wikileaks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Extradition Assange a Threat to Journalism (in Dutch)</title>
+      <link>https://www.chrismeyns.xyz/blog/extradition-assange-a-threat-to-journalism/</link>
+      <pubDate>Wed, 06 Jul 2022 14:25:47 +0200</pubDate>
+      
+      <guid>https://www.chrismeyns.xyz/blog/extradition-assange-a-threat-to-journalism/</guid>
+      <description>This is an opinion piece written for the Dutch newspaper NRC Handelsblad. It argues that the USA&amp;rsquo;s request to have publisher and journalist Julian Assange extradited for their work at Wikileaks is a threat to journalism worldwide.
+Recent keurde de Britse Minister van Binnenlandse Zaken Priti Patel een verzoek van de Verenigde Staten goed om WikiLeaks-oprichter Julian Assange uit te leveren. De verdediging van Assange zegt bij het Hooggerechtshof in beroep te gaan.</description>
+    </item>
+    
+  </channel>
+</rss>
