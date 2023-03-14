@@ -1,2 +1,2 @@
-# COM
-Personal website.
+# Chris Onrust Meyns
+Personal website of Chris Onrust Meyns.
