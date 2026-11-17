@@ -1,165 +1,109 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-	<meta name="generator" content="Hugo 0.121.2">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Chris Onrust Meyns">
-	<meta name="description" content="Personal website of Chris Onrust Meyns">
-	<title>C.O.M.</title>
-	<meta property="og:title" content="" />
-<meta property="og:description" content="Personal website of Chris Onrust Meyns" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.chrismeyns.xyz/" /><meta property="og:image" content="https://www.chrismeyns.xyz/com.jpg" />
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Page title + description -->
+  <title>Chris Onrust Meyns</title>
+  <meta name="description" content="Docs engineer, information systems researcher, and occasional type nerd.">
 
-	<link rel="stylesheet" href="/css/style.css" />
-	<link rel="stylesheet" href="/css/syntax.css" />
-	<script src="https://cdn.counter.dev/script.js" data-id="3c07d091-a626-4239-8c2a-1fffaed17de8" data-utcoffset="2"></script>
-	<link rel="alternate" type="application/rss+xml" href="https://www.chrismeyns.xyz/index.xml" title="C.O.M.">
-	
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', '367113228', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
 
-</head><body>
-        <div class="container">
+  <!-- Social preview (optional). Use a 1200×630 image -->
+  <meta property="og:title" content="Chris Onrust Meyns">
+  <meta property="og:description" content="Docs engineer, information systems researcher, and occasional type nerd.">
+  <meta property="og:image" content="https://chrismeyns.xyz/img/share.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://chrismeyns.xyz/">
 
-            <div class="logo-nav"><header class="site-title">
-	<a class="logo" href="/">
-		<img src="https://www.chrismeyns.xyz//images/com.svg" alt="Chris Onrust Meyns site logo (capital letters C.O.M. in Fraktur script)"></a>
-</header>
+  <!-- Preload fonts -->
+  <link rel="preload" href="fonts/Amador-W01-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Tiresias_Infofont.woff2" as="font" type="font/woff2" crossorigin>
 
+    <script>
+    (function () {
+      var themes = window.SITE_THEMES = ['blue', 'off-white', 'red', 'cool-black', 'cyan'];
+      document.documentElement.dataset.theme = themes[0];
+    })();
+  </script>
 
-</div><nav class="site-nav FlexItem FlexNav grid-item">
-	<a href="https://www.chrismeyns.xyz/#about" class="nav-item">about</a>
-	<a href="https://www.chrismeyns.xyz/#podcast" class="nav-item">podcast</a>
-	<a href="https://www.chrismeyns.xyz/#books" class="nav-item">books</a>
-	<a href="https://www.chrismeyns.xyz/#projects" class="nav-item">projects</a>
-	<a href="https://www.chrismeyns.xyz/#blog" class="nav-item">blog</a>
-</nav>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.counter.dev/script.js" data-id="3c07d091-a626-4239-8c2a-1fffaed17de8" data-utcoffset="2"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<main>
-  <h2 id="---about---"><!-- raw HTML omitted --></h2>
-<p>Hello! This is the personal website of <strong>Chris Onrust Meyns</strong> (pron. mʌɪns). I write about information systems, philosophy, and run a podcast on vulnerabilities in our tech-driven societies today.</p>
-<p>For updates, fetch the <a href="/blog/index.xml">blog RSS</a> or <a href="http://eepurl.com/gjVVnT">subscribe via email</a>.</p>
-<!-- raw HTML omitted -->
-<p>Feel free to get in touch. You can contact me: <a href="mailto:meyns@proton.me">meyns@proton.me</a></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h2 id="podcast">Podcast</h2>
-<p><a href="/podcast">Vulnerable By Design</a></p>
-<!-- raw HTML omitted -->
-<h2 id="books">Books</h2>
-<ul class="booklist">
-   
-    <li><a href="/books/2021-10-12-philosophers-library/">The Philosophers’ Library</a>
-    </li>
-   
-    <li><a href="/books/2021-06-18-information-and-the-history-of-philosophy/">Information and the History of Philosophy</a>
-    </li>
-  
-</ul>
+  <!-- ───────────── Header: pill navigation ───────────── -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Primary">
+      <ul class="pills" id="nav-pills">
+        <li class="pills__item is-active"><a class="pills__link" href="/">About</a></li>
+        <li class="pills__item"><a class="pills__link" href="mailto:hello@chrismeyns.xyz?subject=Hello!">Email</a></li>
+      </ul>
 
-<h2 id="projects">Projects</h2>
-<ul class="projects">
-   
-    <li><a href="/projects/festival-of-derivatives/">The Festival of Derivatives (7 Dec 2022, online event)</a>
-    </li>
-   
-    <li><a href="/projects/the-shielding/">The Shielding</a>
-    </li>
-   
-    <li><a href="/projects/propaganda-and-the-everyday/">Propaganda and the Everyday 2022</a>
-    </li>
-  
-</ul>
-<h2 id="blog">Blog</h2>
-<ul class="bloglist">
-   
-    <li class="blog-list-item" style="font-family: monospace;">2024-01-28 <a href="/blog/provisional-measures-requested-ordered-south-africa-israel-icj/" style="font-family: 'Source Serif Pro'"> Provisional measures requested by the Republic of South Africa and ordered by the International Court of Justice (ICJ): a comparison</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2023-11-12 <a href="/blog/climate-march-suppressed-speeches/" style="font-family: 'Source Serif Pro'"> Climate march Amsterdam: Suppressed speeches</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2023-10-19 <a href="/blog/de-waarheid-vertellen-xr-brief-farrell-bradbrook-hallam/" style="font-family: 'Source Serif Pro'"> Brief Farrell, Bradbrook, Hallam (Extinction Rebellion): De waarheid vertellen, zodat we van onze fouten kunnen leren - Bespiegelingen na vijf jaar</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2022-11-08 <a href="/blog/bbc-just-stop-oil-conversation-analysis/" style="font-family: 'Source Serif Pro'"> Just Stop Oil x BBC (a conversation analysis)</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2022-10-15 <a href="/blog/2022-10-15-festival-of-derivatives-cfp/" style="font-family: 'Source Serif Pro'"> CFP: Festival of Derivatives</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2022-09-29 <a href="/blog/nationaliseer-energiesector/" style="font-family: 'Source Serif Pro'"> Nationalise the Energy Sector (in Dutch)</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2022-07-06 <a href="/blog/extradition-assange-a-threat-to-journalism/" style="font-family: 'Source Serif Pro'"> Extradition Assange a Threat to Journalism (in Dutch)</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2021-06-18 <a href="/blog/2021-06-18-information-visualization-in-the-philosophical-transactions/" style="font-family: 'Source Serif Pro'"> Information Visualization in the Philosophical Transactions</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2021-06-18 <a href="/blog/2021-06-18-information-history-philosophy-introduction/" style="font-family: 'Source Serif Pro'"> Information and the History of Philosophy: Introduction</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2021-06-01 <a href="/blog/2021-06-01-interview-breaking-waves/" style="font-family: 'Source Serif Pro'"> Interview with Breaking the Waves podcast</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2021-04-20 <a href="/blog/2021-04-20-data-fabrication-contact-tracing-netherlands/" style="font-family: 'Source Serif Pro'"> Data fabrication in contact tracing data in the Netherlands</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2020-10-16 <a href="/blog/2020-10-16-philosophy-as-work/" style="font-family: 'Source Serif Pro'"> Philosophy as Work</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2020-07-21 <a href="/blog/2020-01-01-amo-molyneux/" style="font-family: 'Source Serif Pro'"> Amo and Molyneux’s Question</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2019-10-09 <a href="/blog/2019-10-09-data-in-the-royal-society-philosophical-transactions/" style="font-family: 'Source Serif Pro'"> ‘Data’ in the Royal Society’s Philosophical Transactions, 1665–1886</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2019-09-15 <a href="/blog/2019-09-15-philosophy-postcard-iris-murdoch/" style="font-family: 'Source Serif Pro'"> Philosophy by Postcard: Iris Murdoch</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2019-06-03 <a href="/blog/2019-06-03-inscription-rebellion/" style="font-family: 'Source Serif Pro'"> Inscription Rebellion on Elizabeth Carter’s (1717-1806) Title Page</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2019-04-01 <a href="/blog/2019-04-01-amo-philmind/" style="font-family: 'Source Serif Pro'"> Anton Wilhelm Amo’s Philosophy of Mind</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2019-03-01 <a href="/blog/2019-03-01-amo-perception/" style="font-family: 'Source Serif Pro'"> Anton Wilhelm Amo and the Problems of Perception</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2018-02-22 <a href="/blog/2018-03-20-women-philosophers-agency/" style="font-family: 'Source Serif Pro'"> Women Philosophers Get No Agency: Elisabeth of Bohemia</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2018-01-01 <a href="/blog/2018-01-01-sympathetic-action/" style="font-family: 'Source Serif Pro'"> Sympathetic Action in the Seventeenth Century</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2017-10-28 <a href="/blog/2017-03-20-why-dont-philosophers-talk-about-slavery/" style="font-family: 'Source Serif Pro'"> Why Don’t Philosophers Talk About Slavery?</a>
-    </li>
-   
-    <li class="blog-list-item" style="font-family: monospace;">2016-10-01 <a href="/blog/2016-10-01-leibniz-ethics-probability/" style="font-family: 'Source Serif Pro'"> Leibniz and the Ethics of Probability</a>
-    </li>
-  
-</ul>
-<p><a href="/#top">⌃ Back to top</a></p>
+      <button class="to-top" id="to-top" type="button" aria-label="Back to top" tabindex="-1">
+        <svg viewBox="0 0 14 14" aria-hidden="true">
+          <path fill="currentColor" d="M7.6 2.8 12 7.3V5.5L7 .6 2 5.5v1.8l4.4-4.5v9.8h1.2z"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
 
+  <main id="main" class="page">
 
-          </main><footer class="FlexItem FlexFooter">
-	<p><a href="mailto:meyns@proton.me" class="footer-item">email</a>
+    <!-- ───────────── Wordmark + bio ───────────── -->
+    <section class="intro">
+      <!-- Name / wordmark -->
+      <h1 class="wordmark" id="wordmark">Onrust Meyns</h1>
 
+      <!-- Big intro sentence -->
+      <div class="bio" id="bio">
+        <p class="bio__text" id="bio-text">
+          Hello world! Chris Onrust Meyns here. Currently I’m active as a docs engineer, information systems researcher, and occasional type nerd based in Amsterdam, The Netherlands.
+        </p>
+      </div>
+    </section>
 
-	<p><a href="http://eepurl.com/gjVVnT" class="footer-item">newsletter</a></p>
-</footer></div>
-    </body>
+    <!-- ─── Three-column details, only 1 for now ───────── -->
+    <section class="details" id="about" aria-label="About">
+      <p>
+        Want to say hi? I love that. Get in touch.
+      </p>
+      <!-- <p>
+        Placeholder paragraph two. 
+      </p>
+      <p>
+        Placeholder paragraph three.
+      </p> -->
+    </section>
+
+    <!-- ───────────── Colophon / footer ───────────── -->
+    <footer class="colophon">
+      <nav class="social" aria-label="Elsewhere">
+        <!-- Social links, prefer 2-4 -->
+        <a class="pill" href="mailto:hello@chrismeyns.xyz">Email</a>
+        <a class="pill" href="https://www.linkedin.com/in/chris-om/" target="_blank" rel="noopener">Linkedin</a>
+      </nav>
+
+      <!-- <p class="colophon__note">
+        <strong>NOTE</strong> • Placeholder note 1, e.g. a comment about the design.
+      </p>
+
+      <p class="colophon__note">
+        <strong>NOTE</strong> • Placeholder note 2, e.g. a comment about tech stack or whatever.
+      </p> -->
+
+      <p class="colophon__copyright">
+        <!-- Year placeholder, fills automatically w js -->
+        Built with ❤︎ and coffee • <span id="year">2026</span>
+		
+      </p>
+    </footer>
+
+  </main>
+</body>
 </html>

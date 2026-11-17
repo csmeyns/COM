@@ -1,0 +1,690 @@
+/* ============= Landing page — styles ======== */
+
+/* -------------------------------------
+   1. FONTS
+   The .woff2 files are in /fonts.
+   Include weight ranges for variable fonts so the
+   wordmark weight animation is smooth (e.g. font-weight: 100 900).
+   --------------------------------------- */
+
+@font-face {
+  font-family: "Amador";
+  src: url("fonts/Amador-W01-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tiresias Infofont";
+  src: url("fonts/Tiresias_Infofont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tiresias Infofont";
+  src: url("fonts/Tiresias_Infofont_Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* -----------------------------------
+   2. SETTINGS, might need quick changes
+   ---------------------------------------- */
+
+:root {
+  /* Fonts: your family name first, then fallbacks */
+  --font-display: "Amador", Georgia, serif;
+  --font-body: "Tiresias Infofont", Verdana, system-ui, sans-serif;
+  --font-sans: var(--font-body);
+  --font-mono: ui-monospace, Menlo, Consolas, monospace;
+
+  /* Weights: Amador 400, Tiresias 400 */
+  --w-wordmark: 400;
+  --w-bio: 400;
+  --w-body: 400;
+  --w-small: 400;
+  --w-strong: 800;
+
+  /* Colours — HSL parts so script.js can swap themes.
+     Default: blue. */
+
+  --bg-h: 248;
+  --bg-s: 85%;
+  --bg-l: 35%;
+  --fg-h: 209;
+  --fg-s: 30%;
+  --fg-l: 90%;
+
+  --focus: rgb(15 86 240 / 0.8);
+
+  /* Spacing */
+  --gutter: 16px; /* side padding + column gap */
+  --button-height: 36px; /* nav + social pill height */
+
+  /* Motion */
+  --t-long: 750ms;
+  --t-medium: 400ms;
+  --t-short: 200ms;
+  --ease: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  --ease-back: cubic-bezier(0.375, 0.39, 0, 1.175);
+}
+
+/* Colour themes.
+   To add or remove one, change it here AND in the list in index.html
+*/
+[data-theme="blue"] {
+  --bg-h: 248;
+  --bg-s: 85%;
+  --bg-l: 35%;
+  --fg-h: 209;
+  --fg-s: 30%;
+  --fg-l: 90%;
+}
+
+[data-theme="off-white"] {
+  --bg-h: 210;
+  --bg-s: 20%;
+  --bg-l: 93%;
+  --fg-h: 220;
+  --fg-s: 25%;
+  --fg-l: 11%;
+}
+
+[data-theme="red"] {
+  --bg-h: 2;
+  --bg-s: 89%;
+  --bg-l: 45%;
+  --fg-h: 137;
+  --fg-s: 32%;
+  --fg-l: 94%;
+}
+
+[data-theme="cool-black"] {
+  --bg-h: 220;
+  --bg-s: 25%;
+  --bg-l: 11%;
+  --fg-h: 210;
+  --fg-s: 20%;
+  --fg-l: 88%;
+}
+
+[data-theme="cyan"] {
+  --bg-h: 169;
+  --bg-s: 100%;
+  --bg-l: 81%;
+  --fg-h: 266;
+  --fg-s: 91%;
+  --fg-l: 58%;
+}
+
+:root,
+[data-theme] {
+  --bg: hsl(var(--bg-h) var(--bg-s) var(--bg-l));
+  --fg: hsl(var(--fg-h) var(--fg-s) var(--fg-l));
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --gutter: 0.8333vw; /* 16px @ 1920 */
+    --button-height: 1.875vw; /* 36px @ 1920 */
+  }
+}
+
+/* ----------------------------------
+   3. BASE
+   ------------------------------------ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-weight: var(--w-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    background-color var(--t-long) var(--ease),
+    color var(--t-long) var(--ease);
+}
+
+::selection {
+  background: hsl(var(--fg-h) var(--fg-s) var(--fg-l) / 0.35);
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.08em;
+}
+
+a:focus-visible {
+  outline: 4px solid var(--focus);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: -100px;
+  z-index: 1000;
+  padding: 8px 12px;
+  background: var(--fg);
+  color: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.skip-link:focus {
+  top: var(--gutter);
+}
+
+hr.rule {
+  border: 0;
+  border-bottom: 1px solid var(--fg);
+  transition: border-color var(--t-long) var(--ease);
+}
+
+/* Small mono label style (nav, pills, copyright) */
+.pills__link,
+.pill,
+.colophon__copyright {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* ---------------------------------
+   4. HEADER — fixed pill nav with a sliding "bead"
+  ----------------------------------------- */
+
+.site-header {
+  position: fixed;
+  z-index: 800;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--gutter);
+  pointer-events: none; /* only the pill row is clickable */
+}
+
+.nav {
+  display: flex;
+  transform: translateY(0);
+  transition: transform var(--t-medium) var(--ease-back);
+}
+
+.site-header.is-hidden .nav {
+  transform: translateY(calc(-100% - var(--gutter) * 2));
+}
+
+.pills {
+  position: relative;
+  display: flex;
+  width: 100%;
+  list-style: none;
+  border-radius: 0vw;
+  background: var(--fg);
+  pointer-events: auto;
+  box-shadow:
+    0 1.3px 5.3px rgb(0 0 0 / 0.06),
+    0 4.5px 17.9px rgb(0 0 0 / 0.09),
+    0 20px 80px rgb(0 0 0 / 0.15);
+  transition: background-color var(--t-long) var(--ease);
+}
+
+@media (min-width: 700px) {
+  .pills {
+    width: auto;
+  }
+  .pills__item {
+    width: clamp(100px, 10vw, 125px);
+  }
+}
+
+.pills__item {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+}
+
+.pills__link {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: var(--button-height);
+  line-height: var(--button-height);
+  color: var(--bg);
+  transition: color var(--t-short) var(--ease);
+}
+
+.pills__link:focus-visible {
+  outline-offset: -4px;
+}
+
+.pills__item.is-current .pills__link {
+  color: var(--fg);
+}
+
+/* The bead (created by script.js) */
+.pills__bead {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: var(--button-height);
+  border-radius: 0;
+  background: var(--bg);
+  border: 4px solid var(--fg);
+  pointer-events: none;
+  transition:
+    transform var(--t-medium) var(--ease-back),
+    width var(--t-medium) var(--ease-back),
+    background-color var(--t-long) var(--ease),
+    border-color var(--t-long) var(--ease);
+}
+
+/* Back-to-top button */
+.to-top {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--button-height);
+  height: var(--button-height);
+  margin-left: 8px;
+  padding: 0;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  background: var(--fg);
+  color: var(--bg);
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow:
+    0 1.3px 5.3px rgb(0 0 0 / 0.06),
+    0 4.5px 17.9px rgb(0 0 0 / 0.09),
+    0 20px 80px rgb(0 0 0 / 0.15);
+  transition:
+    width var(--t-short) var(--ease),
+    margin-left var(--t-short) var(--ease),
+    transform var(--t-short) var(--ease),
+    opacity var(--t-short) var(--ease),
+    background-color var(--t-short) var(--ease),
+    color var(--t-short) var(--ease),
+    border-color var(--t-short) var(--ease);
+}
+.to-top:hover,
+.to-top:focus-visible {
+  background: var(--bg);
+  color: var(--fg);
+  border-color: var(--fg);
+}
+.to-top:focus-visible {
+  outline: 4px solid var(--focus);
+  outline-offset: 2px;
+}
+.to-top svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Hidden while at the top of the page */
+.to-top:not(.is-visible) {
+  width: 0;
+  margin-left: 0;
+  border-width: 0;
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+@media (min-width: 700px) {
+  .to-top {
+    margin-left: auto;
+  }
+}
+
+/* --------------------------------------
+   5. WORDMARK
+   Font size is set by script.js so the name spans the full width.
+   ---------------------------------------- */
+
+.intro {
+  padding: 23.5vh var(--gutter) 0;
+}
+
+/* --- TWO LINES --- */
+
+.wordmark {
+  --line-width: 85%; /* width of each word */
+  --line-overlap: 0.04em; /* how far line 2 tucks up under line 1 */
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4vw;
+  font-family: var(--font-display);
+  font-weight: var(--w-wordmark);
+  font-synthesis: none;
+  font-size: 20vw; /* fallback until JS measures */
+  line-height: 0.8;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+@media (min-width: 700px) {
+  .wordmark {
+    --line-width: 60%;
+  }
+}
+
+.wordmark__line {
+  display: flex;
+  align-self: flex-start; /* 1st word on left, natural letter spacing */
+}
+.wordmark__line + .wordmark__line {
+  align-self: flex-end; /* 2nd word sits on the right */
+  margin-top: calc(var(--line-overlap) * -1);
+}
+
+.wordmark__line:last-child {
+  padding-bottom: 0.02em;
+} /* room for the y's tail */
+
+@media (min-width: 500px) {
+  .wordmark {
+    margin-bottom: 3.5vw;
+  }
+}
+@media (min-width: 700px) {
+  .wordmark {
+    margin-bottom: 2vw;
+  }
+}
+@media (min-width: 1024px) {
+  .wordmark {
+    margin-bottom: 1vw;
+  }
+}
+
+.wordmark .char {
+  display: inline-block;
+}
+
+.wordmark .char.is-clickable {
+  cursor: pointer;
+}
+
+/* -------------------------------------
+   6. BIO — big sentence
+-------------------------------------- */
+
+.bio__text {
+  font-weight: var(--w-bio);
+  font-size: 6.75vw;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  padding-top: 3.5vw;
+  padding-bottom: 4vw;
+  font-family: var(--font-body);
+}
+
+@media (min-width: 500px) {
+  .bio__text {
+    font-size: 6.15vw;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    padding-top: 2.25vw;
+    padding-bottom: 3.5vw;
+  }
+}
+
+@media (min-width: 700px) {
+  .bio__text {
+    /* font-weight: calc(var(--w-bio) - 50); */
+    font-size: calc(5.12vw - 1px);
+    padding-top: 1.6vw;
+    padding-bottom: 2.2vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bio__text {
+    font-size: calc(4.15vw - 1px);
+    line-height: 0.97;
+    letter-spacing: -0.03em;
+    padding-top: 1.1vw;
+    padding-bottom: 1.75vw;
+  }
+}
+
+/* Word-by-word reveal (spans added by script.js) */
+.bio__text .word-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+.bio__text .word {
+  display: inline-block;
+}
+
+/* ----------------------------
+   7. DETAILS — three columns on larger screens
+   -------------------------------------------- */
+
+.details {
+  display: grid;
+  gap: var(--gutter);
+  padding: 5vw var(--gutter);
+  font-size: clamp(15px, 3vw, 20px);
+  line-height: 1.25;
+  font-weight: var(--w-body);
+  font-synthesis: none;
+  font-family: var(--font-body);
+}
+
+@media (min-width: 500px) {
+  .details {
+    padding-block: 3.5vw;
+  }
+}
+
+@media (min-width: 700px) {
+  .details {
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(1, 1fr);
+    padding-block: 2vw;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+}
+
+@media (min-width: 1024px) {
+  .details {
+    padding-block: 1.5vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .details {
+    font-size: clamp(20px, 1.5vw, 28px);
+    line-height: 1.35;
+  }
+}
+
+/* --------------------------------
+   8. COLOPHON -> social pills, notes
+   ---------------------------------------- */
+
+.colophon {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: var(--gutter);
+  margin: 0 var(--gutter);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: var(--w-small);
+  font-family: var(--font-body);
+  padding-bottom: clamp(16px, 3vw, 48px);
+}
+
+.colophon strong {
+  font-family: var(--font-body);
+  font-weight: var(--w-strong);
+}
+
+.social {
+  grid-column: span 6;
+  display: flex;
+  gap: 0.6em;
+  border-top: 1px solid var(--fg);
+  border-bottom: 1px solid var(--fg);
+  padding-block: 3vw;
+}
+
+.pill {
+  white-space: nowrap;
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.76em 1em;
+  border-radius: 0vw;
+  background: var(--fg);
+  color: var(--bg);
+  letter-spacing: 0.03em;
+  transition:
+    background-color var(--t-long) var(--ease),
+    color var(--t-long) var(--ease),
+    transform var(--t-short) var(--ease);
+}
+.pill:hover {
+  transform: translateY(-2px);
+}
+
+.colophon__note,
+.colophon__copyright {
+  grid-column: span 3;
+  padding-block: 4vw;
+}
+
+.colophon__copyright {
+  grid-column: span 6;
+  /* border-top: 1px solid var(--fg); */
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 500px) {
+  .colophon__note,
+  .colophon__copyright {
+    padding-block: 2.5vw;
+  }
+}
+
+@media (min-width: 700px) {
+  .social {
+    padding-block: 1.5vw;
+  }
+  .colophon__note {
+    grid-column: span 2;
+    padding-block: 1.5vw;
+  }
+  .colophon__copyright {
+    grid-column: span 2;
+    border-top: 0;
+    padding-block: 1.5vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .colophon {
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--fg);
+    padding-top: 1vw;
+  }
+  .social {
+    grid-column: span 1;
+    align-self: start;
+    border: 0;
+    padding: 0;
+    margin-bottom: 1vw;
+  }
+  .pill {
+    flex: 0 0 auto;
+    height: var(--button-height);
+    padding: 0 1.5em;
+  }
+  .colophon__note {
+    grid-column: span 1;
+    padding: 0 0 1vw;
+  }
+  .colophon__copyright {
+    grid-column: span 3;
+    border-top: 1px solid var(--fg);
+    padding: 1vw 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .pill {
+    padding: 0 2.5em;
+  }
+}
+
+/* Scale the small text fluidly on very wide screens */
+@media (min-width: 1600px) {
+  .colophon,
+  .pills__link,
+  .pill,
+  .colophon__copyright {
+    font-size: 0.75vw;
+    line-height: 1.33;
+  }
+  .pills__link {
+    line-height: var(--button-height);
+  }
+}
+
+.colophon hr,
+.social,
+.colophon__copyright {
+  transition: border-color var(--t-long) var(--ease);
+}
+
+/* -----------------------------------------
+   9. Reduced motion
+   ------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
